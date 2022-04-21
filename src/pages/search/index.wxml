@@ -1,0 +1,39 @@
+<!-- 搜索条 -->
+<view class="header-cotent">
+  <view class="searbar-view">
+    <view class="left-row">
+      <via-icon name="search" size="32" />
+      <input class="search-input" value="{{value}}" auto-focus placeholder-class="placehodle" placeholder="搜索题目" confirm-type="search" bindconfirm="handleSearch" bindinput="handleInput" bindconfirm="handleSearch"  />
+    </view>
+    <view class="row">
+      <via-icon name="roundclose" size="32" bindtap="handleClearSearch"  wx:if="{{value}}"/>
+      <view class="btn" bindtap="handleCliclBtnSearch">搜索</view>
+    </view>
+  </view>
+  <view id="slotId"></view>
+</view>
+
+<!-- 历史搜索 -->
+<view wx:if="{{!list}}">
+  <view class="header-serche-rencently" wx:if="{{recentList.length>0}}">
+    <view class="title">最近搜索</view>
+    <view class="icon" bindtap="handleClear">
+      <via-icon name="delete" size="32" />
+    </view>
+  </view>
+  <view class="search-recently">
+    <view class="item" bindtap="handleClickSearchText" data-name="{{item}}" wx:for="{{recentList}}" wx:key="unique">{{item}}</view>
+  </view>
+</view>
+<!-- 搜索内容 -->
+<pageScroll id="pageScroll" height="{{height}}" pullRefresh="{{list && list.length>0}}" bind:onPulling="handlePulling">
+  <view class="cotent-view">
+  <question-card question-data="{{item}}"  wx:for="{{list}}" wx:key="unique"/>
+</view>
+<view  wx:if="{{list && list.length === 0 }}" class="null-view">
+  <image class="null-icon" src="/images/empty-search.png"/>
+  <tex>找不到您要的题目</tex>
+  <tex>换个词试试？</tex>
+</view>
+</pageScroll>
+

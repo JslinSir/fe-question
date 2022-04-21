@@ -1,0 +1,10 @@
+<view style='position: relative;{{customStyle}};{{painterStyle}}' class="canvas">
+  <canvas canvas-id="photo" style="{{photoStyle}};position: absolute;" />
+  <canvas canvas-id="bottom" style="{{painterStyle}};position: absolute;" />
+  <canvas canvas-id="k-canvas" style="{{painterStyle}};position: absolute;" />
+  <canvas canvas-id="top" style="{{painterStyle}};position: absolute;" />
+  <canvas 
+    canvas-id="front" 
+    style="{{painterStyle}};position: absolute;"
+    disable-scroll="{{true}}" />
+</view>

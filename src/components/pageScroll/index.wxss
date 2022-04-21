@@ -1,0 +1,63 @@
+.scroll-contain {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+}
+
+.fresh-loading{
+  margin-top: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  background: linear-gradient(90deg, #ddd 25%, #f6f6f6 37%, #ddd 100%);
+  background-size: 400% 100%;
+  font-size: 32rpx;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.freshloading-run{
+  animation: sketelonloading 1.1s ease infinite
+}
+
+@keyframes sketelonloading {
+  0% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0 50%
+  }
+}
+
+.item {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: salmon;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.scroll-bottom {
+  display: flex;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40rpx;
+  padding: 40rpx 0;
+}
+
+.refresher {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20rpx;
+  background-color: #f6f6f6;
+}

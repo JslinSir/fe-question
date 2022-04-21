@@ -1,0 +1,23 @@
+@supports (bottom: constant(safe-area-inset-bottom)) {
+  .safe-area {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+@supports (bottom: env(safe-area-inset-bottom)) {
+  .safe-area {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.them-bg {
+  background-color: #627efe;
+}
+.them-color {
+  color: #627efe;
+}

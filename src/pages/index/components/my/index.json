@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "via-icon":"/components/via-icon/index",
+    "via-alert":"/components/via-alert/index"
+  }
+}

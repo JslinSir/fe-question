@@ -1,0 +1,242 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  background-color: #fff;
+  padding: 10rpx 30rpx 0 30rpx;
+}
+
+.header .day {
+  font-size: 48rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.header .month {
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.header .year {
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.header .search-view {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  right: 30rpx;
+  width: 148rpx;
+  height: 80%;
+  padding: 0 10rpx;
+  color: #aaa;
+  font-size: 24rpx;
+  border-radius: 100rpx;
+  background-color: rgba(98, 126, 254, 0.1);
+  animation: stretchWidth 0.4s ease-in-out;
+}
+
+.header .search-view .search-icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 10rpx;
+}
+
+.cotent {
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx 30rpx 0rpx 30rpx;
+  background-image: linear-gradient(180deg, #fff 89%, #f6f6f6 100%);
+}
+
+.banner-view {
+  margin-top: 20rpx;
+  position: relative;
+  height: 400rpx;
+}
+
+.banner {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 20rpx;
+  background-color: #f2f2f2;
+}
+
+.banner-mask {
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 0 0 20rpx 20rpx;
+  color: #fff;
+  font-size: 24rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.today-view {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  height: 60rpx;
+  color: #323232;
+}
+
+.today-icon {
+  width: 38rpx;
+  height: 38rpx;
+  min-width: 38rpx;
+  min-height: 38rpx;
+  margin-right: 10rpx;
+}
+
+.today-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.today-view-swiper {
+  line-height: 60rpx;
+  height: 60rpx;
+  width: 500rpx;
+}
+.swiper-text {
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.title-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  position: relative;
+  color: #323232;
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 20rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.title-tag::after {
+  content: "";
+  position: absolute;
+  width: 10rpx;
+  height: 40rpx;
+  border-radius: 100rpx;
+  left: 0rpx;
+  background-color: #627efe;
+}
+
+.shadow-question {
+  margin-bottom: 40rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 0 20rpx 6rpx rgba(98, 126, 254, 0.1);
+}
+
+.left-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.left-row text {
+  margin-right: 10rpx;
+}
+
+.cate-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cate-box .cate-item {
+  box-sizing: border-box;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 330rpx;
+  height: 140rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  color: #323232;
+  font-size: 32rpx;
+  border-radius: 24rpx;
+  background: #ffffff;
+  box-shadow: 20rpx 20rpx 60rpx #d9d9d9, -20rpx -20rpx 60rpx #ffffff;
+}
+
+.cate-box .cate-item .cate-icon {
+  transform: translateY(2px);
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 10rpx;
+}
+
+.slot {
+  padding-bottom: 200rpx;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  animation: skeletonloading 1.4s ease infinite;
+}
+
+@keyframes skeletonloading {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes stretchWidth {
+  0% {
+    width: 0;
+    transform: scale(0, 0);
+  }
+
+  100% {
+    width: 148rpx;
+    transform: scale(1, 1);
+  }
+}

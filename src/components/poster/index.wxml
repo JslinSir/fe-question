@@ -1,0 +1,32 @@
+<view class="posterModal" wx:if="{{showPoster}}">
+  <view class="mask" bindtap="handleHidePoster" />
+  <view class="modalContent" style="width: 490rpx">
+    <image src="{{posterImage}}" mode="widthFix" class="image" style="width: 490rpx;"/>
+    <view class="btnGroup {{isShare? 'flex-space-between': 'flex-center'}} safe-area" wx:if="{{posterImage}}">
+      <view class="btnItem" open-type="share" bindtap="handleShare" wx:if="{{btnConfig.wxfriends}}" >
+        <!-- 原生分享按钮 -->
+        <button 
+          open-type="share" 
+          class="shareButton" 
+          data-share="{{share}}" 
+        />
+        <image class="share-icon" src="./images/icon_share_wechat.png"/>
+        <text class="btnText">分享好友</text>
+      </view>
+      <view class="btnItem" bindtap="handleSave" wx:if="{{btnConfig.save}}">
+        <image class="share-icon" src="./images/icon_share_pic.png"/>
+        <text class="btnText">保存海报</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 画布 -->
+<painter-canvas 
+  customStyle='margin-left: 40rpx; height: 1000rpx;position: fixed;'
+  scaleRatio="{{4}}"
+  wx:if="{{paintPallette}}"
+  palette="{{paintPallette}}"
+  bind:imgOK="onImgOK"
+/>
+ 

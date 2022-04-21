@@ -1,0 +1,86 @@
+.acount-view{
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280rpx;
+  background-color: #fff;
+  border-radius:30rpx;
+  margin:30rpx;
+}
+.jihe-icon{
+  width: 80rpx;
+  height: 80rpx;
+}
+.positon1{
+  position: absolute;
+  left: 0;
+}
+.positon2{
+  position: absolute;
+  right: 0;
+  bottom:0;
+}
+.avator{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+}
+.avator image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.nick-name{
+  position: relative;
+  margin-top: 40rpx;
+  font-size: 32rpx;
+  color: #323232;
+  font-weight: bold;
+}
+.nick-name::after{
+  content: '';
+  position: absolute;
+  bottom: -20rpx;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
+  width: 30rpx;
+  height: 6rpx;
+  border-radius: 100rpx;
+  background-color: #627efe;
+}
+
+.menu-card{
+  position: relative;
+  box-sizing: border-box;
+  padding: 30rpx;
+  margin: 20rpx 30rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #323232;
+  font-size: 28rpx;
+  height: 100rpx;
+ 
+}
+
+.copy-right{
+  display: inline-block;
+  width: max-content;
+  bottom: 240rpx;
+  color: #ddd;
+  position: absolute;
+  font-size: 28rpx;
+  left:50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
+}

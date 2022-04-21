@@ -1,0 +1,65 @@
+<pageScroll bind:onPulling="handleRefresh" id="pageScrollId">
+  <view class="header" >
+    <text class="day">{{date.day}}</text>
+    <text class="month">{{date.month}}</text>
+    <text class="year">{{date.year}}</text>
+    <!-- 搜索 -->
+    <view class="search-view" bindtap="handleSearch">
+      <image src="/images/search.png" class="search-icon"/>
+       搜索 
+    </view>
+   
+  </view>
+ 
+  <view class="cotent" >
+  <view class="banner-view" bindtap="handleToDayWord">
+    <image src="{{detail.img}}" class="banner" />
+    <view class="banner-mask">{{detail.note}}</view>
+  </view>
+  
+
+    <!-- 今日题目 -->
+    <view class="today-view">
+       <image src="/images/today.png" class="today-icon"/>
+       <view class="today-question">
+        <view>今日题目： </view>
+        <swiper autoplay vertical class="today-view-swiper">
+          <swiper-item class="today-item-swiper" wx:for="{{todayData}}" wx:key="unique" data-index="{{index}}" bindtap="handleToDetail"> 
+            <view class="swiper-text">{{item.title}}</view>
+          </swiper-item>
+        </swiper>
+       </view>
+    </view>
+    <!-- 热门题目 -->
+    <view class="title-row" bindtap="handleToHotPage">
+      <view class="title-tag">热门题目</view>
+      <view class="left-row">
+         <text>More</text>
+        <via-icon name="right"/>
+      </view>
+    </view>
+
+    <view class="hot-question">
+      <view class="shadow-question" wx:for="{{hotData}}" wx:key="unique" wx:if="{{index<3}}"> 
+        <question-card  question-data="{{item}}" />
+      </view>
+    </view>
+
+    <!-- 热门分类 -->
+    <view class="title-row" bindtap="handleClickSource">
+      <view class="title-tag">热门分类</view>
+      <view class="left-row">
+         <text>More</text>
+        <via-icon name="right"/>
+      </view>
+    </view>
+ 
+    <view class="cate-box">
+      <view class="cate-item" wx:for="{{cateConfig}}" wx:key="unique" bindtap="handleClickToCateList" data-type="{{item.name}}">
+        <image src="{{item.icon}}" class="cate-icon"/>
+        <text class="cte-text">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="slot"></view>
+</pageScroll>

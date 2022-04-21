@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"题目详情",
+  "usingComponents": {
+    "via-alert":"/components/via-alert/index",
+    "poster":"/components/poster/index"
+  }
+}

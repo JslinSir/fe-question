@@ -1,0 +1,116 @@
+.auth-modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 850rpx;
+}
+.auth-modal {
+  box-sizing: border-box;
+  padding: 30rpx;
+  width: 690rpx;
+  height: 750rpx;
+  opacity: 1;
+  background-color: #fff;
+  margin-bottom: 60rpx;
+  border-radius: 24rpx;
+  box-shadow: 0rpx 0rpx 10rpx 10rpx rgba(271,271,271,0.4);
+  animation: stretchHeight 0.4s ease-in-out;
+}
+
+.title{
+  text-align: center;
+  font-size: 32rpx;
+  color: #323232;
+  font-weight: bold;
+}
+.avator-group{
+  margin-top: 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.auth-loading{
+  margin: 0 60rpx;
+}
+.avator-icon{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.logo{
+  background-color: #627efe;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 12rpx;
+  font-weight: bold;
+}
+.des-box{
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #323232;
+}
+
+.bnt-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 140rpx;
+}
+.btn{
+  width: 280rpx !important;
+  height: 88rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 32rpx;
+  background-color: #ecf1f1;
+  border-radius: 60rpx;
+}
+.btn::after{
+  border: none;
+}
+.active{
+  background-color: #627efe;
+  color: #fff;
+  margin-left: 60rpx !important;
+}
+
+
+@keyframes stretchHeight {
+  0% {
+    transform: translateY(100%);
+    transform-origin: 0 0;
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+    transform-origin: 0 0;
+  }
+}
+
+ 

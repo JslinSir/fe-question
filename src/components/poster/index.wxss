@@ -1,0 +1,167 @@
+.flex,
+.flex-center-xy,
+.flex-column,
+.flex-row {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-left {
+  justify-content: flex-start;
+}
+
+.flex-center, .flex-center-xy {
+  justify-content: center;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-top {
+  align-items: flex-start;
+}
+
+.flex-middle, .flex-center-xy {
+  align-items: center;
+}
+
+.flex-bottom {
+  align-items: flex-end;
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-full {
+  flex: 1;
+}
+
+.posterModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1001;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.sharPosterCanvas {
+  position: fixed;
+  top: 2000px;
+  left: 2000px;
+  z-index: 11;
+}
+
+.modalContent {
+  margin-bottom: 150rpx;
+}
+
+.btnGroup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  box-sizing: border-box;
+  height: 240rpx;
+  background: #FFF;
+  border-radius: 30rpx 30rpx 0 0;
+  z-index: 1002;
+}
+
+.btnItem {
+  margin-top: 30rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28rpx;
+  color: #323232;
+}
+
+.shareButton {
+  position: absolute;
+  width: 252rpx;
+  height: 90rpx;
+  z-index: 10;
+  opacity: 0;
+}
+
+.btnIcon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.btnText {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #323232;
+  margin-left: 10rpx;
+}
+
+.btndes {
+  font-size: 20rpx;
+  color: #666666;
+}
+
+.shareSlot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-icon{
+  width: 60rpx;
+  height: 60rpx;
+}

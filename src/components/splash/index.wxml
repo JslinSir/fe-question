@@ -1,0 +1,6 @@
+ <view class="splash-view" wx:if="{{splashStatus}}">
+  <view class="splash-box">
+    <image class="splash-icon" src="./splash.svg"/>
+  </view>
+  <view class="splash-title">前端问道</view>
+ </view>

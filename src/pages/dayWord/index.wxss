@@ -1,0 +1,176 @@
+page {
+  background-color: #f6f6f6;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  background-color: #fff;
+  padding: 0rpx 30rpx 0 30rpx;
+}
+
+.header .day {
+  font-size: 48rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.header .month {
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.header .year {
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  color: #000;
+  font-weight: bold;
+}
+.header .icon{
+  position: absolute;
+  width: 16rpx;
+  height: 16rpx;
+  left: 200rpx;
+  top: 36rpx;
+}
+
+.cotent {
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx 30rpx 0rpx 30rpx;
+  background-image: linear-gradient(180deg, #fff 89%, #f6f6f6 100%);
+
+}
+
+
+
+.banner {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 500rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background-color: #f2f2f2;
+  /* animation: scan-in  0.3s  ease-in-out; */
+}
+.img-from{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #666;
+}
+
+
+.conten-text {
+  padding-top: 60rpx;
+  padding-bottom: 60rpx;
+  background-color: #fff;
+  box-shadow: 0 2rpx 40rpx 0 rgba(0, 0, 0, 0.03);
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.conten-text .text {
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #323232;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+  -webkit-line-clamp: 8;
+}
+
+.conten-text .text-from {
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+
+.share-icon {
+  position: fixed;
+  right: 50rpx;
+  bottom: 120rpx;
+  width: 60rpx;
+  height: 60rpx;
+  animation: share-animotion 1.8s  ease-in-out;
+}
+
+.skeleton{
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  animation: skeletonloading 1.4s ease infinite;
+}
+
+.w260{
+  margin: 0 30rpx;
+  width: 260rpx;
+  height: 48rpx;
+  border-radius: 20rpx;
+}
+
+
+.w460{
+  margin: 0 30rpx;
+  width: 460rpx;
+  height: 48rpx;
+  border-radius: 20rpx;
+}
+
+ 
+
+@keyframes skeletonloading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes scan-in {
+
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+ 
+  
+  100% {
+    opacity: 1;
+    transform: scale(1);
+
+  }
+
+}
+
+
+@keyframes share-animotion {
+
+  0% {
+    transform-origin: 50% 0 0;
+    transform: rotate(0deg);
+  }
+
+ 
+  
+  100% {
+    transform-origin: 50% 0 0;
+    transform: rotate(-360deg);
+
+  }
+
+}
+
+ 

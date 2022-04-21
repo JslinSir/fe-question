@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"每日鸡汤",
+  "usingComponents": {
+    "pageScroll":"/components/pageScroll/index",
+    "poster":"/components/poster/index"
+  }
+}

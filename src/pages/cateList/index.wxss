@@ -1,0 +1,7 @@
+page{
+    background-color: #f6f6f6;
+  }
+  .question-hot-view{
+    box-sizing: border-box;
+    padding: 30rpx;
+  }

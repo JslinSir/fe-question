@@ -1,0 +1,4 @@
+ 
+<view class="question-hot-view">
+  <question-card question-data="{{item}}" wx:for="{{hotData}}" wx:key="unique"/>
+</view>

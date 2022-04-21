@@ -1,0 +1,33 @@
+<view id="pageId">
+
+
+  <view wx:if="{{curentTabObj['0']}}"  hidden="{{curentTab!=0}}">
+    <home bind:onSwitchTab="handleSwitchTabSource"  id="tab-0"/>
+  </view>
+  <view wx:if="{{curentTabObj['1']}}" hidden="{{curentTab!=1}}">
+    <source  id="tab-1"/>
+  </view>
+  <view wx:if="{{curentTabObj['2']}}"  hidden="{{curentTab!=2}}" >
+    <my id="tab-2"/>
+  </view>
+
+
+
+
+</view>
+
+
+
+
+
+
+<poster id="poster" />
+
+<splash bind:onClose="handleSplashClose" />
+
+
+<via-nav-tab tab="{{tabs}}" bind:onChange="handleTabChange" fontSelectColor="#627efe"  curentTab="{{curentTab}}"/>
+
+<view class="checkauth-position">
+  <checkAuth id="checkAuthId"/>
+</view>

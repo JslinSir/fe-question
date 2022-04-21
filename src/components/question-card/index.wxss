@@ -1,0 +1,47 @@
+.conten-box{
+  box-sizing: border-box;
+  padding: 0 30rpx
+}
+.cotent-item{
+  box-sizing: border-box;
+  padding: 20rpx;
+  color: #323232;
+  font-size: 28rpx;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 30rpx 6rpx rgba(0,0,0,0.01);
+  border-radius: 30rpx;
+  margin-bottom: 20rpx;
+}
+.cotent-title{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.date-icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+}
+.cotent-date{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #999;
+}
+.cotent-type{
+  margin-top: 20rpx;
+  color: #323232;
+}
+.cotan-tags{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10rpx 8rpx;
+  border-radius: 24rpx;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 24rpx;
+  border: 2rpx solid #627efe;
+  background-color: #627efe;
+}

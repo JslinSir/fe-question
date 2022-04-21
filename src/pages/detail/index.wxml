@@ -1,0 +1,43 @@
+ <view class="cotent">
+ 
+    <view class="title">{{detail.title}}</view>
+    <view class="tags-view" wx:if="{{detail.label}}">
+       <view class="tags">#{{detail.label}}</view>
+    </view>
+    <view class="des" wx:if="{{detail.issuesId}}" bindtap="handleToGithub" data-type="source">
+     <image class="icon" src="/images/github.png" />
+    <text class="des-mini">链接：</text>
+    <text class="them-color"  	user-select>https://github.com/haizlin/fe-interview/issues/{{detail.issuesId}}</text>
+    </view>
+    <view class="des row" wx:if="{{detail.author}}"><image class="icon" src="/images/write.png"/>作者： {{detail.author}}</view>
+    <view class="des row" wx:if="{{detail.releaseTime}}">
+        <image class="icon" src="/images/time-black.png" />
+        更新日期： {{detail.releaseTime}}
+      </view>
+  
+ </view>
+ 
+
+ <view class="float-btns-group" wx:if="{{show}}">
+   <view class="btn-item animation-show0" bindtap="handleLike">
+    <image class="btn-icon" src="/images/icon-like.png"/>
+     <view class="btn-text">收藏</view>
+   </view>
+   <view class="btn-item animation-show1" bindtap="handleInvite">
+    <image class="btn-icon" src="/images/icon-share.png"/>
+     <view class="btn-text">邀请作答</view>
+   </view>
+   <view class="btn-item animation-show2" bindtap="handleToGithub" data-type="source">
+    <image class="btn-icon" src="/images/icon-taolun.png"/>
+     <view class="btn-text">去讨论</view>
+   </view>
+ 
+ </view>
+
+
+ <view class="copy-right" bindtap="handleToGithub" date-type="jslin">powerd by @Jslin</view>
+
+<via-alert id="alerId"/>
+
+<poster id="poster" />
+

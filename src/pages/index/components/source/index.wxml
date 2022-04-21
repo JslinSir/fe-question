@@ -1,0 +1,23 @@
+<wxs module="_">
+  function firstWordTransfer(title) {
+    if (title) {
+      var first = title.slice(0, 1)
+      var _First = first.toUpperCase()
+      return _First + title.slice(1, title.length)
+    }
+  }
+  module.exports = {
+    firstWordTransfer: firstWordTransfer
+  }
+</wxs>
+<view class="tab-view">
+  <view class="tab-item {{curentName === '' ? 'active' :''}}" bindtap="handleClickTabItem" data-name="">全部</view>
+  <view class="tab-item {{curentName === item.label ? 'active' :''}}" bindtap="handleClickTabItem" data-name="{{item.label}}" wx:for="{{groupArray}}" wx:key="unique">{{_.firstWordTransfer(item.label)}}</view>
+</view>
+<view id="slotId"/>
+<pageScroll id="pageScrollId" height="{{height}}" bind:onPulling="handlePulling" bind:onLoadMore="handleMore">
+  <view class="conten-box">
+    <question-card wx:for="{{curentName?curentArray:originData}}" question-data="{{item}}" wx:key="unique" />
+  </view>
+  <view class="slot"></view>
+</pageScroll>

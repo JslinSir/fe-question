@@ -1,0 +1,22 @@
+<page-container show="{{show}}" round="{{round}}"  overlay duration="400" position="bottom" overlay-style="background: rgba(0, 0, 0, 0.6);" custom-style="background-color: transparent;" close-on-slide-down="{{false}}">
+  <view class="auth-modal-box">   
+    <view class="auth-modal">
+      <view class="title">授权头像</view>
+      <view class="avator-group">
+        <image class="avator-icon" src="/images/mp.png" />
+        <view class="auth-loading">
+          <via-loading type="move" />
+        </view>
+        <image class="avator-icon" src="/images/logo.png" />
+      </view>
+      <view class="des-box">
+        <view>前端问道申请访问你的授权信息</view>
+        <view>(昵称，头像，地区及性别)</view>
+      </view>
+      <view class="bnt-group">
+        <view class="btn" bindtap="hide">暂不授权</view>
+        <button class="btn active" open-type="getUserInfo" bindtap="handleAuth">授权</button>
+      </view>
+    </view>
+  </view>
+</page-container>

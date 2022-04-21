@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText":"",
+  "enablePullDownRefresh": false,
+  "usingComponents": { 
+    "poster":"../../components/poster/index",
+    "splash":"../../components/splash/index",
+    "via-nav-tab":"../../components/via-nav-tab/index",
+    "home":"./components/home/index",
+    "source":"./components/source/index",
+    "my":"./components/my/index",
+    "checkAuth":"/components/checkAuth/index"
+  }
+}

@@ -1,0 +1,19 @@
+<view class="about-view">
+  <view class="logo-view">
+    <image class="logo" src="/images/logo.png" />
+  </view>
+
+  <view>
+    你好，My Friend, 此小程序的相关 题库资源 由 <text class="link" bindtap="handleToGithub" data-type="source">前端知识每日3+1提供</text>
+  </view>
+
+  <view>
+    小程序由 <text class="link" bindtap="handleToGithub" user-select date-type="jslin">JsLin 制作</text>，方便小伙伴们，能够在移动端上使用...
+  </view>
+
+</view>
+
+<view class="copy-right" bindtap="handleToGithub" date-type="jslin">powerd by @Jslin</view>
+
+
+<via-alert id="alerId"/>

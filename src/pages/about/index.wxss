@@ -1,0 +1,34 @@
+ 
+
+ .about-view{
+   font-size: 28rpx;
+   color: #323232;
+   box-sizing: border-box;
+   padding: 30rpx;
+ }
+ .logo-view{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 60rpx;
+ }
+ .logo{
+   width: 120rpx;
+   height: 120rpx;
+ }
+ .link{
+   color:  #627efe;
+ }
+
+ .copy-right{
+  display: inline-block;
+  width: max-content;
+  bottom: 240rpx;
+  color: #ddd;
+  position: absolute;
+  font-size: 28rpx;
+  left:50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
+}

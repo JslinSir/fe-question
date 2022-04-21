@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"热门题目",
+  "usingComponents": {
+    "question-card":"/components/question-card/index"
+  }
+}

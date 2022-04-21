@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"关于",
+  "usingComponents": {
+    "via-alert":"/components/via-alert/index"
+  }
+}

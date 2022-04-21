@@ -1,0 +1,21 @@
+<view class="scroll-contain">
+ 	<scroll-view
+    scroll-y="true" 
+    scroll-top="{{scrollTop}}"
+    refresher-enabled="{{pullRefresh}}"
+    refresher-threshold="{{100}}"
+    refresher-background="{{background}}"
+    refresher-default-style="none"
+    refresher-triggered="{{pullStatus}}"
+    bindrefresherpulling="handlePull"
+    bindrefresherrefresh="handleRefresh"
+    bindrefresherrestore="handleRestore"
+    bindrefresherabort="handleAbort"
+    bindscrolltolower="handleMore"
+    style="height:{{height}}px;width: 100%;">
+    <view slot="refresher" class="refresher">
+     <view class="fresh-loading freshloading-run">前端问道</view>
+    </view>
+   <slot  />
+ 	</scroll-view>
+ </view>

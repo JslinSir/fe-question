@@ -1,0 +1,31 @@
+<pageScroll bind:onPulling="handleRefresh" id="pageScrollId">
+  <view class="header" wx:if="{{!loading}}">
+    <text class="day">{{date.day}}</text>
+    <text class="month">{{date.month}}</text>
+    <text class="year">{{date.year}}</text>
+    <!-- <image class="icon" src="../../images/triangle.png"/> -->
+  </view>
+  <!-- 骨架屏 -->
+  <view class="cotent" wx:if="{{loading}}">
+    <view  class="banner skeleton" />
+    <view class="conten-text">
+      <view class="text skeleton w260"></view>
+      <view class="text-from skeleton w460"></view>
+    </view>
+  </view>
+  <view class="cotent" wx:else>
+    <image src="{{detail.img}}" class="banner" />
+    <view class="conten-text">
+
+      <view class="text">{{detail.note}}</view>
+      <view class="text-from">{{detail.content}}</view>
+    </view>
+  </view>
+</pageScroll>
+
+
+<image id="shareIcon" wx:if="{{iconShow}}" bind:tap="handleShare" class="share-icon" src="/images/share.png" />
+
+<poster id="poster" />
+
+ 

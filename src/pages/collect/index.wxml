@@ -1,0 +1,11 @@
+<!-- 我的收藏 -->
+<pageScroll id="pageScroll" height="{{height}}" pullRefresh="{{list && list.length>0}}" bind:onPulling="handlePulling">
+  <view class="cotent-view">
+  <question-card question-data="{{item}}"  wx:for="{{list}}" wx:key="unique"/>
+</view>
+<view  wx:if="{{list && list.length === 0 }}" class="null-view">
+  <image class="null-icon" src="/images/empty-empty.png"/>
+  <tex>空空如也~</tex>
+  <tex>快去收藏感兴趣的题吧~</tex>
+</view>
+</pageScroll>

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "pageScroll":"/components/pageScroll/index",
+    "via-icon":"/components/via-icon/index",
+    "question-card":"/components/question-card/index"
+  }
+}

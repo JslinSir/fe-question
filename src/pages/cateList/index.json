@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"",
+  "usingComponents": {
+    "question-card":"/components/question-card/index"
+  }
+}

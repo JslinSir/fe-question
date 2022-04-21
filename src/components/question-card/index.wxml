@@ -1,0 +1,16 @@
+ 
+
+
+ <view class="card" bindtap="handleToDetail">
+   <view class="cotent-item">
+      <view class="cotent-title">{{detail.title}}</view>
+      <view class="cotent-type">
+       <view class="cotan-tags">{{detail.label}}</view>
+      </view>
+      <view class="cotent-date" wx:if="{{detail.releaseTime}}">
+        <image class="date-icon" src="/images/time.png" />
+        更新日期： {{detail.releaseTime}}
+      </view>
+    
+    </view>
+ </view>
