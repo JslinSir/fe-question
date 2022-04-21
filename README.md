@@ -5,6 +5,10 @@
 
 <h1 align="center">前端问道 小程序</h1>
 
+<p align="center">
+    <img width="150" height="150"  src="./images/qr.jpg">
+</p>
+
 <div align="center">
     <span>前端问道 小程序</span><br/>
     <strong>一个前端知识仓库小程序</strong>
