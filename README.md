@@ -15,9 +15,9 @@
 </div>
 
 # 前端问道小程序
- 小程序里的资源来源于  [前端面试3+1 ](http://www.h-camel.com/index.html)  
- 每日鸡汤数据来源于  [爱词霸](http://open.iciba.com/dsapi/)
- 此项目在你学习前端的同时，也是你学习开发小程序的Demo
+ - 小程序里的资源来源于  [前端面试3+1 ](http://www.h-camel.com/index.html)  
+ - 每日鸡汤数据来源于  [爱词霸](http://open.iciba.com/dsapi/)
+ - 此项目在你学习前端的同时，也是你学习开发小程序的Demo
 
 
 ## 功能介绍
